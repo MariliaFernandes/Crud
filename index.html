@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha Técnica</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body background="img/bguva.png">
+  <div class="container">
+    <div class="header">
+      <span>Ficha Técnica</span>
+      <button onclick="openModal()" id="new">Incluir</i></button>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th><img src="img/uva.png" width="17px">Uva</th>
+            <th><img src="img/mund.png" width="17px">País</th>
+            <th><img src="img/safr.png" width="22px">Classificação</th>
+            <th><img src="img/sad.png" width="22px">Safra</th>
+            <th><img src="img/tep.png" width="22px">Temperatura</th>
+            <th><img src="img/tarc.png" width="27px">Potencial de Guarda</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-uva">Uva</label>
+          <input id="m-uva" type="text" required />
+  
+          <label for="m-pais">País</label>
+          <input id="m-pais" type="text" required />
+  
+          <label for="m-classifica">Classificação</label>
+          <input id="m-classifica" type="text" required />
+
+          <label for="m-safra">Safra</label>
+          <input id="m-safra" type="text" required /> 
+
+          <label for="m-tempertura">Temperatura</label>
+          <input id="m-temperatura" type="text" required />
+
+          <label for="m-potencialdeGuarda">Potencial de Guarda</label>
+          <input id="m-potencialdeGuarda" type="text" required /> 
+
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
